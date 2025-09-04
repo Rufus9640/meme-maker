@@ -146,17 +146,26 @@ python server.py
 
 MIT License - Feel free to use and modify
 
-## 🙏 Support
+## 👨‍💻 Developer
 
-If this tool saves you time or makes you money:
+**Santosh Krishna** - Full Stack Developer
 
-- ☕ [Buy me a coffee](https://ko-fi.com/breakmycode)
-- 💰 [PayPal donation](https://paypal.me/YOUR_USERNAME)
-- ⭐ Star this repository
-- 📢 Share with friends
+This project was built as a learning experience to demonstrate modern web development skills and create a professional-grade meme creation tool.
+
+### 🛠️ Technologies Used
+- HTML5, CSS3, JavaScript (ES6+)
+- Canvas API for image manipulation
+- Python HTTP server
+- Responsive design with CSS Grid and Flexbox
+- Microsoft Teams-inspired UI/UX
+
+### 📧 Contact
+- **Email**: [krishnasanthosh247@gmail.com](mailto:krishnasanthosh247@gmail.com)
+- ⭐ Star this repository if you find it useful
+- 📢 Share with friends and fellow developers
 
 ---
 
-**Built with ❤️ for creators who demand professional quality**
+**Built with ❤️ by Santosh Krishna - A passionate developer creating quality web experiences**
 
-*"Because asking your friends to make memes is apparently harder than building a professional meme generator"*
+*"Transforming ideas into professional web applications, one project at a time"*

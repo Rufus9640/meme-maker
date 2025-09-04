@@ -1284,44 +1284,150 @@
             color: #6264a7;
         }
 
-        .donate-section {
+        .developer-card {
             background: linear-gradient(135deg, #f0f2ff 0%, #e8ebff 100%);
-            border-radius: 12px;
+            border-radius: 16px;
             padding: 24px;
             margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(98, 100, 167, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .donate-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #323130;
-            margin-bottom: 8px;
+        .developer-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
         }
 
-        .donate-text {
-            color: #605e5c;
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
             margin-bottom: 16px;
         }
 
-        .donate-buttons {
+        .developer-avatar {
+            font-size: 48px;
+            width: 64px;
+            height: 64px;
             display: flex;
+            align-items: center;
             justify-content: center;
-            gap: 16px;
+            background: linear-gradient(135deg, #6264a7, #5a5fc7);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(98, 100, 167, 0.3);
         }
 
-        .donate-btn {
-            background: #6264a7;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
+        .developer-info {
+            flex: 1;
+        }
+
+        .developer-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #323130;
+            margin: 0 0 4px 0;
+            background: linear-gradient(135deg, #6264a7, #5a5fc7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .developer-title {
+            font-size: 16px;
+            color: #605e5c;
+            margin: 0;
             font-weight: 500;
+        }
+
+        .card-content {
+            margin-bottom: 20px;
+        }
+
+        .project-description {
+            color: #323130;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .tech-tag {
+            background: rgba(98, 100, 167, 0.1);
+            color: #6264a7;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid rgba(98, 100, 167, 0.2);
             transition: all 0.3s ease;
         }
 
-        .donate-btn:hover {
-            background: #5a5fc7;
+        .tech-tag:hover {
+            background: rgba(98, 100, 167, 0.2);
             transform: translateY(-1px);
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-btn {
+            background: linear-gradient(135deg, #6264a7, #5a5fc7);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(98, 100, 167, 0.3);
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(98, 100, 167, 0.4);
+            background: linear-gradient(135deg, #5a5fc7, #4f46e5);
+        }
+
+        .contact-icon {
+            font-size: 16px;
+        }
+
+        /* Responsive design for developer card */
+        @media (max-width: 768px) {
+            .developer-card {
+                padding: 20px;
+            }
+            
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+            }
+            
+            .developer-avatar {
+                font-size: 40px;
+                width: 56px;
+                height: 56px;
+            }
+            
+            .developer-name {
+                font-size: 20px;
+            }
+            
+            .tech-stack {
+                justify-content: center;
+            }
         }
 
         /* Animations */
@@ -1846,14 +1952,14 @@
                             <span class="contact-icon">👨‍💻</span>
                             <div class="contact-details">
                                 <strong>Developer</strong>
-                                <p>Shawnfrost</p>
+                                <p>Santosh Krishna</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">📧</span>
                             <div class="contact-details">
                                 <strong>Email Support</strong>
-                                <p><a href="mailto:rufus9640@gmail.com">rufus9640@gmail.com</a></p>
+                                <p><a href="mailto:krishnasanthosh247@gmail.com">krishnasanthosh247@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -1967,12 +2073,29 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="donate-section">
-                <div class="donate-title">Enjoying Meme Maker Pro?</div>
-                <div class="donate-text">Support the developer who made meme creation effortless!</div>
-                <div class="donate-buttons">
-                    <a href="https://ko-fi.com/breakmycode" class="donate-btn" target="_blank">☕ Buy me a coffee</a>
-                    <a href="https://paypal.me/YOUR_USERNAME" class="donate-btn" target="_blank">💰 PayPal</a>
+            <div class="developer-card">
+                <div class="card-header">
+                    <div class="developer-avatar">👨‍💻</div>
+                    <div class="developer-info">
+                        <h3 class="developer-name">Santosh Krishna</h3>
+                        <p class="developer-title">Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="project-description">This project was built as a learning experience to demonstrate modern web development skills and create a professional-grade meme creation tool.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Canvas API</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="mailto:krishnasanthosh247@gmail.com" class="contact-btn">
+                        <span class="contact-icon">📧</span>
+                        Get in Touch
+                    </a>
                 </div>
             </div>
             
@@ -1983,7 +2106,7 @@
             </div>
             
             <p style="color: #8a8886; font-size: 14px;">
-                © 2025 Meme Maker Pro. Built for creators who demand quality.
+                © 2025 Meme Maker Pro. Built by Santosh Krishna - A passionate developer creating quality web experiences.
             </p>
         </div>
     </footer>
