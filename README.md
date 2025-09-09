@@ -148,7 +148,7 @@ MIT License - Feel free to use and modify
 
 ## 👨‍💻 Developer
 
-**Santosh Krishna** - Full Stack Developer
+**Shawn** - Full Stack Developer
 
 This project was built as a learning experience to demonstrate modern web development skills and create a professional-grade meme creation tool.
 
@@ -160,12 +160,12 @@ This project was built as a learning experience to demonstrate modern web develo
 - Microsoft Teams-inspired UI/UX
 
 ### 📧 Contact
-- **Email**: [krishnasanthosh247@gmail.com](mailto:krishnasanthosh247@gmail.com)
+- **Email**: [rufus9640@gmail.com](mailto:rufus9640@gmail.com)
 - ⭐ Star this repository if you find it useful
 - 📢 Share with friends and fellow developers
 
 ---
 
-**Built with ❤️ by Santosh Krishna - A passionate developer creating quality web experiences**
+**Built with ❤️ by Shawn - A passionate developer creating quality web experiences**
 
 *"Transforming ideas into professional web applications, one project at a time"*
