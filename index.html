@@ -1497,6 +1497,237 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        /* Templates Section */
+        .templates-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f8faff 0%, #f0f4ff 100%);
+            margin: 40px 0;
+            border-radius: 16px;
+        }
+
+        .templates-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .templates-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #323130;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #6264a7, #5a5fc7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .templates-subtitle {
+            font-size: 18px;
+            color: #605e5c;
+            font-weight: 500;
+        }
+
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .template-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .template-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            border-color: #6264a7;
+        }
+
+        .template-card.selected {
+            border-color: #6264a7;
+            background: linear-gradient(135deg, #f0f2ff 0%, #e8ebff 100%);
+        }
+
+        .template-preview {
+            height: 160px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .template-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Drake Template */
+        .drake-template {
+            flex-direction: column;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        }
+
+        .drake-top, .drake-bottom {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            width: 100%;
+        }
+
+        .drake-top {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Distracted Boyfriend Template */
+        .distracted-template {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .distracted-man, .distracted-woman, .distracted-gf {
+            font-size: 24px;
+        }
+
+        .distracted-man {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .distracted-woman {
+            position: absolute;
+            right: 20px;
+            top: 30%;
+        }
+
+        .distracted-gf {
+            position: absolute;
+            right: 20px;
+            bottom: 30%;
+        }
+
+        /* Woman Yelling at Cat Template */
+        .woman-cat-template {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .woman-yelling, .confused-cat {
+            font-size: 20px;
+        }
+
+        /* Expanding Brain Template */
+        .brain-template {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+        }
+
+        .brain-levels {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .brain-level {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Two Buttons Template */
+        .buttons-template {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .sweating-man {
+            font-size: 32px;
+        }
+
+        .button-choice {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn-option {
+            font-size: 24px;
+        }
+
+        /* This is Fine Template */
+        .fine-template {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .dog-fire {
+            font-size: 28px;
+        }
+
+        .fine-text {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .template-info {
+            text-align: center;
+        }
+
+        .template-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #323130;
+            margin-bottom: 4px;
+        }
+
+        .template-desc {
+            font-size: 14px;
+            color: #605e5c;
+            margin: 0;
+        }
+
+        /* Responsive Templates */
+        @media (max-width: 768px) {
+            .templates-grid {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 16px;
+                padding: 0 16px;
+            }
+            
+            .template-card {
+                padding: 16px;
+            }
+            
+            .template-preview {
+                height: 120px;
+            }
+            
+            .templates-title {
+                font-size: 28px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1526,6 +1757,101 @@
                 <span>Start Creating</span>
                 <span>→</span>
             </a>
+        </section>
+
+        <!-- Templates Section -->
+        <section class="templates-section" id="templates">
+            <div class="templates-header">
+                <h2 class="templates-title">Popular Templates</h2>
+                <p class="templates-subtitle">Choose from our collection of viral meme templates</p>
+            </div>
+            <div class="templates-grid">
+                <div class="template-card" data-template="drake">
+                    <div class="template-preview">
+                        <div class="template-placeholder drake-template">
+                            <div class="drake-top">🙅‍♂️</div>
+                            <div class="drake-bottom">👉</div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Drake Pointing</h3>
+                        <p class="template-desc">Classic approval/disapproval format</p>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-template="distracted">
+                    <div class="template-preview">
+                        <div class="template-placeholder distracted-template">
+                            <div class="distracted-man">👨</div>
+                            <div class="distracted-woman">👩</div>
+                            <div class="distracted-gf">😤</div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Distracted Boyfriend</h3>
+                        <p class="template-desc">Perfect for showing preferences</p>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-template="woman-cat">
+                    <div class="template-preview">
+                        <div class="template-placeholder woman-cat-template">
+                            <div class="woman-yelling">😠👩</div>
+                            <div class="confused-cat">😿🐱</div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Woman Yelling at Cat</h3>
+                        <p class="template-desc">Great for arguments/reactions</p>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-template="expanding-brain">
+                    <div class="template-preview">
+                        <div class="template-placeholder brain-template">
+                            <div class="brain-levels">
+                                <div class="brain-level">🧠</div>
+                                <div class="brain-level">🧠✨</div>
+                                <div class="brain-level">🧠💫</div>
+                                <div class="brain-level">🧠🌟</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Expanding Brain</h3>
+                        <p class="template-desc">Show progression of ideas</p>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-template="two-buttons">
+                    <div class="template-preview">
+                        <div class="template-placeholder buttons-template">
+                            <div class="sweating-man">😰</div>
+                            <div class="button-choice">
+                                <div class="btn-option">🔴</div>
+                                <div class="btn-option">🔵</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Two Buttons</h3>
+                        <p class="template-desc">Difficult choices dilemma</p>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-template="this-is-fine">
+                    <div class="template-preview">
+                        <div class="template-placeholder fine-template">
+                            <div class="dog-fire">🐕🔥</div>
+                            <div class="fine-text">"This is fine"</div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">This is Fine</h3>
+                        <p class="template-desc">Everything's under control</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Main Content -->
@@ -2073,32 +2399,6 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="developer-card">
-                <div class="card-header">
-                    <div class="developer-avatar">👨‍💻</div>
-                    <div class="developer-info">
-                        <h3 class="developer-name">Shawn</h3>
-                        <p class="developer-title">Full Stack Developer</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <p class="project-description">This project was built as a learning experience to demonstrate modern web development skills and create a professional-grade meme creation tool.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Canvas API</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="mailto:rufus9640@gmail.com" class="contact-btn">
-                        <span class="contact-icon">📧</span>
-                        Get in Touch
-                    </a>
-                </div>
-            </div>
-            
             <div class="footer-links">
                 <a href="#" class="footer-link">Privacy Policy</a>
                 <a href="#" class="footer-link">Terms of Service</a>
@@ -2106,7 +2406,7 @@
             </div>
             
             <p style="color: #8a8886; font-size: 14px;">
-                © 2025 Meme Maker Pro. Built by Shawn - A passionate developer creating quality web experiences.
+                © 2025 Meme Maker Pro. Professional meme creation tool.
             </p>
         </div>
     </footer>
@@ -2293,6 +2593,65 @@
             }
         };
 
+        // Template data with actual image URLs
+        const memeTemplates = {
+            'drake': {
+                name: 'Drake Pointing',
+                url: 'https://i.imgflip.com/30b1gx.jpg',
+                textAreas: [
+                    { x: 0.5, y: 0.25, width: 0.4, align: 'center' }, // Top text
+                    { x: 0.5, y: 0.75, width: 0.4, align: 'center' }  // Bottom text
+                ]
+            },
+            'distracted': {
+                name: 'Distracted Boyfriend',
+                url: 'https://i.imgflip.com/1ur9b0.jpg',
+                textAreas: [
+                    { x: 0.2, y: 0.9, width: 0.25, align: 'center' }, // Girlfriend
+                    { x: 0.5, y: 0.9, width: 0.25, align: 'center' },  // Boyfriend
+                    { x: 0.8, y: 0.9, width: 0.25, align: 'center' }   // Other woman
+                ]
+            },
+            'woman-cat': {
+                name: 'Woman Yelling at Cat',
+                url: 'https://i.imgflip.com/345v97.jpg',
+                textAreas: [
+                    { x: 0.25, y: 0.9, width: 0.4, align: 'center' }, // Woman side
+                    { x: 0.75, y: 0.9, width: 0.4, align: 'center' }  // Cat side
+                ]
+            },
+            'expanding-brain': {
+                name: 'Expanding Brain',
+                url: 'https://i.imgflip.com/1jwhww.jpg',
+                textAreas: [
+                    { x: 0.75, y: 0.125, width: 0.4, align: 'left' }, // Level 1
+                    { x: 0.75, y: 0.375, width: 0.4, align: 'left' }, // Level 2
+                    { x: 0.75, y: 0.625, width: 0.4, align: 'left' }, // Level 3
+                    { x: 0.75, y: 0.875, width: 0.4, align: 'left' }  // Level 4
+                ]
+            },
+            'two-buttons': {
+                name: 'Two Buttons',
+                url: 'https://i.imgflip.com/1g8my4.jpg',
+                textAreas: [
+                    { x: 0.2, y: 0.3, width: 0.25, align: 'center' }, // Left button
+                    { x: 0.8, y: 0.3, width: 0.25, align: 'center' }, // Right button
+                    { x: 0.5, y: 0.9, width: 0.8, align: 'center' }   // Bottom text
+                ]
+            },
+            'this-is-fine': {
+                name: 'This is Fine',
+                url: 'https://i.imgflip.com/26am.jpg',
+                textAreas: [
+                    { x: 0.5, y: 0.1, width: 0.8, align: 'center' }, // Top text
+                    { x: 0.5, y: 0.9, width: 0.8, align: 'center' }  // Bottom text
+                ]
+            }
+        };
+
+        // Current template
+        let currentTemplate = null;
+
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
             canvas = document.getElementById('memeCanvas');
@@ -2383,6 +2742,14 @@
                             break;
                     }
                 }
+            });
+
+            // Template selection
+            document.querySelectorAll('.template-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const templateId = this.dataset.template;
+                    selectTemplate(templateId);
+                });
             });
         }
 
@@ -2610,6 +2977,146 @@
             }
             
             updateMeme();
+        }
+
+        // Core Meme Drawing Function
+        function updateMeme() {
+            if (!currentImage || !ctx) return;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the image
+            ctx.drawImage(currentImage, 0, 0, canvas.width, canvas.height);
+
+            // Get text values
+            const topText = document.getElementById('topText').value.toUpperCase();
+            const bottomText = document.getElementById('bottomText').value.toUpperCase();
+            const fontSize = parseInt(document.getElementById('fontSize').value);
+
+            // Get current style
+            const style = stylePresets[currentStyle];
+
+            // Set font properties
+            ctx.font = `${style.fontWeight} ${fontSize}px ${style.fontFamily}`;
+            ctx.textAlign = style.textAlign;
+            ctx.fillStyle = style.fillColor;
+            ctx.strokeStyle = style.strokeColor;
+            ctx.lineWidth = style.strokeWidth;
+
+            // Draw text based on template or default positions
+            if (currentTemplate && currentTemplate.textAreas) {
+                // Template-specific text positioning
+                const textInputs = [topText, bottomText];
+                currentTemplate.textAreas.forEach((area, index) => {
+                    if (textInputs[index]) {
+                        drawTextAtPosition(textInputs[index], area, fontSize);
+                    }
+                });
+            } else {
+                // Default positioning for uploaded images
+                if (topText) {
+                    drawText(topText, canvas.width / 2, fontSize + 10);
+                }
+                if (bottomText) {
+                    drawText(bottomText, canvas.width / 2, canvas.height - 20);
+                }
+            }
+        }
+
+        function drawText(text, x, y) {
+            // Draw stroke (outline)
+            if (stylePresets[currentStyle].strokeWidth > 0) {
+                ctx.strokeText(text, x, y);
+            }
+            // Draw fill
+            ctx.fillText(text, x, y);
+        }
+
+        function drawTextAtPosition(text, area, fontSize) {
+            const x = area.x * canvas.width;
+            const y = area.y * canvas.height;
+            
+            // Set text alignment
+            ctx.textAlign = area.align;
+            
+            // Word wrap for long text
+            const maxWidth = area.width * canvas.width;
+            const words = text.split(' ');
+            let line = '';
+            let lines = [];
+            
+            for (let n = 0; n < words.length; n++) {
+                const testLine = line + words[n] + ' ';
+                const metrics = ctx.measureText(testLine);
+                const testWidth = metrics.width;
+                
+                if (testWidth > maxWidth && n > 0) {
+                    lines.push(line);
+                    line = words[n] + ' ';
+                } else {
+                    line = testLine;
+                }
+            }
+            lines.push(line);
+            
+            // Draw each line
+            const lineHeight = fontSize * 1.2;
+            const startY = y - ((lines.length - 1) * lineHeight) / 2;
+            
+            lines.forEach((line, index) => {
+                const lineY = startY + (index * lineHeight);
+                drawText(line.trim(), x, lineY);
+            });
+        }
+
+        // Template Functions
+        function selectTemplate(templateId) {
+            const template = memeTemplates[templateId];
+            if (!template) return;
+
+            // Update UI to show selected template
+            document.querySelectorAll('.template-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            document.querySelector(`[data-template="${templateId}"]`).classList.add('selected');
+
+            // Load template image
+            currentTemplate = template;
+            loadTemplateImage(template.url);
+
+            // Clear existing text
+            document.getElementById('topText').value = '';
+            document.getElementById('bottomText').value = '';
+
+            // Scroll to creator section
+            document.getElementById('creator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function loadTemplateImage(imageUrl) {
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            
+            img.onload = function() {
+                currentImage = img;
+                
+                // Set canvas size
+                canvas.width = img.width;
+                canvas.height = img.height;
+                
+                // Show canvas and hide upload prompt
+                canvas.style.display = 'block';
+                document.querySelector('.upload-prompt').style.display = 'none';
+                
+                // Draw the template
+                updateMeme();
+            };
+            
+            img.onerror = function() {
+                alert('Failed to load template image. Please try again.');
+            };
+            
+            img.src = imageUrl;
         }
 
         // Support Form Handler
